@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="icon" type="image/png" href="../Tarjeta de Perfil/img/usuario-barba.png">
+    <title>Card M.Sena</title>
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script> 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <div class="card">
+        <div class="card_background_img"></div>
+        <div class="card_profile_img"></div>
+        <div class="user_details">
+            <h2>Matias Sena <br>
+            <span>Front-End Developer.   <img rel="icon" type="image/png" src="../Tarjeta de Perfil/img/argentina32x32C.png" alt="Argentina"></span></h2><br>
+        </div>
+        <div class="card_count">
+            <div class="count">
+                <ul class="sci">
+                    <li>
+                      <a href="https://www.facebook.com/matyy.sena/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/fromsoftware_pr" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/in/matias-sena-3418071a3/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/ardreyk_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/Ardreyk" target="_blank"><img src="../Tarjeta de Perfil/img/logotipo-de-github32.png" alt="GitHub"></a>
+                    </li>
+                  </ul>
+            </div>
+             <button class="btn" id="like" onclick="like()">Like✔</button>
+             <script type="text/javascript">
+              function like(){
+                // swal("Gracias por el Like","Si te gusto mi Perfil, no dudes en contactarme","success");
+                swal({
+                  title: "Gracias por el Like",
+                  text: "Si te gusto mi Perfil, no dudes en contactarme",
+                  icon: "success",
+                  button: "♥"
+                });
+                
+              }
+             </script>
+             <br> <br>
+             <button class="btn" id="dislike" onclick="dislike()">DisLike❌</button>
+             <script type="text/javascript">
+              function dislike(){
+                // swal(":c","Estas Seguro que no te gusto mi Perfil?","error",{
+                //   buttons: ["Si, me gusto un poco","No me Gusto Nada"]
+                // });
+                swal({
+                 title: ":c",
+                 text: "Estas Seguro que no te gusto mi Perfil?",
+                 icon: "warning",
+                 buttons: true,
+                 dangerMode: true,
+                 buttons: ["No me Gusto Nada","Si, me gusto un poco"]
+               })
+               .then((willDelete) => {
+                 if (willDelete) {
+                   swal("No dudes en Contactarme 😉", {
+                     icon: "success",
+                   });
+                 } else {
+                   swal("Gracias por pasar. 😐");
+                 }
+               });
+              }
+             </script>
+        </div>
+    </div><br><br>
+    <footer><h3>&copy; All Your Rights Reserved by ElMatute &copy;<a href="https://www.instagram.com/ardreyk_/" target="_blank"><strong> Instagram&#x2615;</strong></a></h3></footer>
+</body>
+</html>

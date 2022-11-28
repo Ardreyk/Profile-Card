@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#000fff, #77d6f3 45%, #f1f1b1 45%, #fff 100%);
+    /* background: linear-gradient(#3399ec, #77d6f3 45%, #f1f1b1 45%, #fff 100%); */
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+strong{
+    color:#f5f5cc;
+}
+
+span{
+    font-size: 14px;
+    color: #161616;
+}
+
+.card {
+    width: 360px;
+    height: auto;
+    background-color: #f1f1b1;
+    margin: 0 auto;
+    margin-top: 80px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    /* backdrop-filter: blur(15px); */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card_profile_img {
+    width: 120px;
+    height: 120px;
+    background: url("../img/img-yo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #301b00;
+    border-radius: 120px;
+    margin: 0 auto;
+    margin-top: -60px;
+
+}
+
+.card_background_img {
+    width: 100%;
+    height: 180px;
+    background: url("../img/435613.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.user_details p {
+    margin-bottom: 20px;
+    margin-top: -5px;
+}
+
+.user_details h3 {
+    margin-top: 10px;
+}
+
+.card_count {
+    padding: 30px;
+    border-top: 1px solid #0000ff;
+}
+
+.count {
+    display: flex;
+    
+    margin-bottom: 28px;
+}
+
+.btn {
+    padding: 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #27dddd;
+    color: #333;
+    cursor: pointer;
+    text-align: center; 
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: 0.5s;
+}
+#like:hover {
+    background: #0acc00;
+    color: #fff;
+}
+#dislike:hover {
+    background: #ff0911;
+    color: #fff;
+}
+
+.sci {
+    position: relative;
+    display: flex;
+    margin-top: 5px;
+}
+  
+  .sci li {
+    list-style: none;
+    margin: 4px;
+}
+  
+  .sci li a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 1.5em;
+    color: #333;
+    text-decoration: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: 0.5s;
+}
+  
+  .sci li a:hover {
+    background: #ff0911;
+    color: #fff;
+}
+footer {
+    background-color: #0000ff;
+    color: #fff;
+}
